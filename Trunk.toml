@@ -1,0 +1,14 @@
+[build]
+target = "index.html"
+
+[watch]
+ignore = [
+    ".git",
+    "target",
+    "dist",
+]
+
+[[hooks]]
+stage = "build"
+command = "tailwindcss"
+command_arguments = ["-i", "input.css", "-o", "output.css", "--minify"]
