@@ -40,6 +40,9 @@ jobs:
           chmod +x tailwindcss-linux-x64
           sudo mv tailwindcss-linux-x64 /usr/local/bin/tailwindcss
 
+      - name: Generate CSS
+        run: tailwindcss -i input.css -o output.css --minify
+
       - name: Build with Trunk
         run: trunk build --release --public-url /${{ github.event.repository.name }}/
 
