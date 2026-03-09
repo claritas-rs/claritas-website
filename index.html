@@ -3,8 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claritas EPUB - Blazing Fast Reading</title>
+  <meta name="description" content="A blazingly fast, highly customizable EPUB reader built with Rust and Leptos for Windows, macOS, and Linux.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link data-trunk rel="css" href="output.css">
+  <link data-trunk rel="copy-dir" href="src/assets">
+  <link rel="icon" type="image/png" href="assets/icon.png">
 </head>
 <body>
+  <script>
+    // Global Intersection Observer for fade-in animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+      
+      // Observe any new matching elements inserted by Leptos
+      const muteObserver = new MutationObserver(() => {
+        document.querySelectorAll('.animate-on-scroll:not(.is-visible):not(.observed)').forEach(el => {
+          el.classList.add('observed');
+          observer.observe(el);
+        });
+      });
+      
+      muteObserver.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
 </body>
 </html>
