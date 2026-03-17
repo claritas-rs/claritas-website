@@ -28,7 +28,7 @@ pub fn Footer() -> impl IntoView {
                         {format!("{} Claritas. Built with Leptos + Tailwind CSS.", js_sys::Date::new_0().get_full_year())}
                     </p>
                     <p class="text-[10px] text-sidebar-muted tracking-[0.8px]">
-                        "v1.1.0 • MIT License"
+                        "v1.2.0 • MIT License"
                     </p>
                 </div>
             </div>
