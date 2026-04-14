@@ -1,10 +1,10 @@
-use leptos::prelude::*;
-use crate::components::navbar::Navbar;
-use crate::components::hero::Hero;
-use crate::components::stats::Stats;
-use crate::components::features::Features;
 use crate::components::download::Download;
+use crate::components::features::Features;
 use crate::components::footer::Footer;
+use crate::components::hero::Hero;
+use crate::components::navbar::Navbar;
+use crate::components::stats::Stats;
+use leptos::prelude::*;
 
 #[component]
 pub fn App() -> impl IntoView {

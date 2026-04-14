@@ -12,7 +12,7 @@ pub fn Navbar() -> impl IntoView {
                         </div>
                         <span class="text-sidebar-title font-bold text-[16px] tracking-[3px] uppercase">Claritas</span>
                     </div>
-                    
+
                     <div class="flex md:hidden">
                         <a href="#download" class="btn-secondary !text-[11px] !px-3 !py-1.5 border border-sidebar-border bg-sidebar-bg">
                             "Download"

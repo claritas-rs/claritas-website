@@ -8,7 +8,7 @@ pub fn Download() -> impl IntoView {
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 class="text-xl md:text-2xl font-bold mb-6 tracking-[3px]">"READY TO START READING?"</h2>
                 <p class="text-sm text-sidebar-muted mb-12 tracking-wide uppercase">"Download the latest version of Claritas for your operating system."</p>
-                
+
                 <div class="grid sm:grid-cols-3 gap-4 mb-16 animate-on-scroll">
                     <a href="https://github.com/claritas-rs/claritas/releases/latest" target="_blank" class="flat-card group !p-[16px]">
                         <svg class="w-8 h-8 text-sidebar-muted group-hover:text-sidebar-text transition-colors mb-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"></path></svg>
@@ -23,7 +23,7 @@ pub fn Download() -> impl IntoView {
                         <span class="text-[13px] font-bold tracking-wide uppercase">"Linux"</span>
                     </a>
                 </div>
-                
+
                 <div class="flat-card text-left items-start animate-on-scroll" style="animation-delay: 200ms;">
                     <h3 class="font-bold text-sm mb-2 tracking-[2px] uppercase">"Install via Cargo"</h3>
                     <p class="text-xs text-sidebar-muted mb-4">"If you have Rust installed, you can build Claritas directly from source:"</p>

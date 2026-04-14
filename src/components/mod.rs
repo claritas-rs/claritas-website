@@ -1,6 +1,6 @@
-pub mod footer;
-pub mod navbar;
-pub mod hero;
-pub mod stats;
-pub mod features;
 pub mod download;
+pub mod features;
+pub mod footer;
+pub mod hero;
+pub mod navbar;
+pub mod stats;
