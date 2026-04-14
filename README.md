@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=222222&height=200&section=header&text=Claritas%20Website&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=40&desc=The%20landing%20page%20for%20the%20Claritas%20EPUB%20reader&descAlignY=60&descSize=18">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=222222&height=200&section=header&text=Claritas%20Website&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=40&desc=The%20landing%20page%20for%20the%20Claritas%20EPUB%20and%20PDF%20reader&descAlignY=60&descSize=18">
 
 <p align="center">
   <i>A blazing fast, minimalist, and responsive landing page built entirely in Rust using Leptos and Tailwind CSS.</i>

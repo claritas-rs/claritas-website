@@ -16,8 +16,8 @@ pub fn Stats() -> impl IntoView {
                         <span class="text-[10px] text-sidebar-muted uppercase tracking-[2px] mt-1">"Binary size"</span>
                     </div>
                     <div class="px-6 py-5 flex flex-col items-center text-center">
-                        <span class="text-2xl font-bold text-sidebar-title tracking-tight">"0"</span>
-                        <span class="text-[10px] text-sidebar-muted uppercase tracking-[2px] mt-1">"Electron / JS"</span>
+                        <span class="text-2xl font-bold text-sidebar-title tracking-tight">"EPUB + PDF"</span>
+                        <span class="text-[10px] text-sidebar-muted uppercase tracking-[2px] mt-1">"Formats supported"</span>
                     </div>
                     <div class="px-6 py-5 flex flex-col items-center text-center">
                         <span class="text-2xl font-bold text-sidebar-title tracking-tight">"100%"</span>

@@ -10,9 +10,9 @@ pub fn Footer() -> impl IntoView {
                         <div class="w-5 h-5 flex items-center justify-center opacity-80">
                             <img src="assets/icon.png" alt="Claritas Logo" class="w-full h-full object-contain grayscale" />
                         </div>
-                        <span class="text-sidebar-text text-[11px] font-bold tracking-[2px] uppercase">Claritas EPUB</span>
+                        <span class="text-sidebar-text text-[11px] font-bold tracking-[2px] uppercase">Claritas EPUB + PDF</span>
                     </div>
-                    
+
                     <div class="flex space-x-6">
                         <a href="https://github.com/claritas-rs/claritas" target="_blank" rel="noopener noreferrer" class="text-sidebar-muted hover:text-sidebar-title transition-colors">
                             <span class="sr-only">GitHub</span>
@@ -22,13 +22,13 @@ pub fn Footer() -> impl IntoView {
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="mt-6 flex items-center justify-between">
                     <p class="text-[10px] text-sidebar-muted tracking-[0.8px]">
                         {format!("{} Claritas. Built with Leptos + Tailwind CSS.", js_sys::Date::new_0().get_full_year())}
                     </p>
                     <p class="text-[10px] text-sidebar-muted tracking-[0.8px]">
-                        "v1.2.0 • MIT License"
+                        "v1.5.0 • MIT License"
                     </p>
                 </div>
             </div>
