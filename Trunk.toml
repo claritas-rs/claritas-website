@@ -9,6 +9,6 @@ ignore = [
 ]
 
 [[hooks]]
-stage = "build"
+stage = "pre_build"
 command = "tailwindcss"
 command_arguments = ["-i", "input.css", "-o", "output.css", "--minify"]
