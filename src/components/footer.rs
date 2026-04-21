@@ -1,4 +1,5 @@
 use leptos::prelude::*;
+use crate::version::CLARITAS_VERSION;
 
 #[component]
 pub fn Footer() -> impl IntoView {
@@ -28,7 +29,7 @@ pub fn Footer() -> impl IntoView {
                         {format!("{} Claritas. Built with Leptos + Tailwind CSS.", js_sys::Date::new_0().get_full_year())}
                     </p>
                     <p class="text-[10px] text-sidebar-muted tracking-[0.8px]">
-                        "v1.5.0 • MIT License"
+                        {format!("{} • MIT License", CLARITAS_VERSION)}
                     </p>
                 </div>
             </div>
